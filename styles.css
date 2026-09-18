@@ -156,3 +156,23 @@ p{max-width:68ch}
   border-bottom:1px solid var(--line);
 }
 @supports not (aspect-ratio: 16/9){ .card-thumb{height:190px} }
+
+/* ---------- back-links to the Towson WordPress page ---------- */
+.tu-right{
+  display:flex;flex-wrap:wrap;align-items:center;gap:6px 16px;
+  margin-left:auto;
+}
+.tu-link{
+  color:var(--tu-gold);font-size:12px;font-weight:700;
+  letter-spacing:.05em;text-decoration:none;white-space:nowrap;
+}
+.tu-link:hover{color:#fff;text-decoration:underline}
+
+.foot-link{margin:0 0 10px}
+.foot-link a{color:var(--tu-gold);font-weight:700}
+
+@media (max-width:640px){
+  /* .tu-unit is hidden at this width; the back-link must stay visible */
+  .tu-right{gap:0}
+  .tu-link{font-size:11px}
+}
