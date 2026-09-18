@@ -1,0 +1,158 @@
+/* Health Decisions Lab — Towson University
+   Palette from TU Brand Toolkit: Gold #FFBB00, Black #151500,
+   Old Gold #cc9900, Graphite #3C3C3C, Glen Mist #dddddd */
+
+:root{
+  --tu-gold:#FFBB00;
+  --tu-black:#151500;
+  --tu-oldgold:#cc9900;
+  --tu-graphite:#3C3C3C;
+  --tu-mist:#dddddd;
+
+  --ink:#151500;
+  --body:#3C3C3C;
+  --muted:#6a6a62;
+  --link:#1b4f82;
+  --bg:#ffffff;
+  --panel:#faf9f6;
+  --line:#e2e0d9;
+  --maxw:1000px;
+}
+
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0;background:var(--bg);color:var(--body);
+  font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+}
+a{color:var(--link);text-decoration:none}
+a:hover,a:focus{text-decoration:underline}
+img{max-width:100%;height:auto}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+
+/* ---------- TU institutional bar ---------- */
+.tu-bar{background:var(--tu-black);border-bottom:4px solid var(--tu-gold)}
+.tu-bar-inner{
+  max-width:var(--maxw);margin:0 auto;padding:9px 24px;
+  display:flex;flex-wrap:wrap;gap:6px 18px;align-items:center;justify-content:space-between;
+}
+.tu-wordmark{
+  display:flex;align-items:center;gap:10px;
+  color:#fff;font-size:12px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;
+  text-decoration:none;
+}
+.tu-wordmark:hover{text-decoration:none;color:var(--tu-gold)}
+.tu-wordmark img{height:22px;width:auto;display:block}
+.tu-unit{color:var(--tu-mist);font-size:12px;letter-spacing:.05em}
+
+/* ---------- site header ---------- */
+.site-header{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:20}
+.header-inner{
+  max-width:var(--maxw);margin:0 auto;padding:18px 24px;
+  display:flex;flex-wrap:wrap;gap:12px 28px;align-items:baseline;justify-content:space-between;
+}
+.brand{text-decoration:none;color:inherit;display:block}
+.brand:hover{text-decoration:none}
+.brand-name{
+  font-size:20px;font-weight:800;letter-spacing:-.015em;color:var(--ink);display:block;
+}
+.brand-sub{
+  font-size:12px;color:var(--muted);display:block;margin-top:3px;
+  letter-spacing:.08em;text-transform:uppercase;
+}
+nav ul{list-style:none;display:flex;flex-wrap:wrap;gap:24px;margin:0;padding:0}
+nav a{
+  font-size:15px;color:var(--body);text-decoration:none;
+  padding-bottom:4px;border-bottom:3px solid transparent;
+}
+nav a:hover{color:var(--ink);text-decoration:none;border-bottom-color:var(--tu-mist)}
+nav a[aria-current="page"]{color:var(--ink);font-weight:700;border-bottom-color:var(--tu-gold)}
+
+/* ---------- hero ---------- */
+.hero{padding:52px 0 40px;border-bottom:1px solid var(--line);background:var(--panel)}
+.hero .rule{width:64px;height:5px;background:var(--tu-gold);margin:0 0 20px}
+.hero h1{font-size:36px;line-height:1.18;letter-spacing:-.022em;margin:0 0 16px;color:var(--ink);max-width:21ch}
+.hero p{font-size:18px;color:var(--body);margin:0;max-width:62ch}
+
+/* ---------- sections ---------- */
+main{padding-bottom:56px}
+section{padding:44px 0}
+h2{font-size:22px;letter-spacing:-.01em;margin:0 0 8px;color:var(--ink)}
+h2 .tick{display:inline-block;width:10px;height:10px;background:var(--tu-gold);margin-right:10px;vertical-align:middle}
+.section-note{color:var(--muted);font-size:15px;margin:0 0 26px;max-width:62ch}
+p{max-width:68ch}
+
+/* ---------- cards ---------- */
+.cards{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(290px,1fr))}
+.card{
+  background:#fff;border:1px solid var(--line);border-top:4px solid var(--tu-gold);
+  border-radius:4px;padding:24px;display:flex;flex-direction:column;
+}
+.card h3{margin:0 0 8px;font-size:18px;color:var(--ink);line-height:1.35}
+.card h3 a{color:var(--ink)}
+.eyebrow{
+  font-size:11px;letter-spacing:.12em;text-transform:uppercase;
+  color:var(--tu-oldgold);font-weight:800;margin:0 0 10px;
+}
+.card p:not(.eyebrow){color:var(--body);font-size:15px;margin:0 24px 18px;flex:1}
+.card-links{display:flex;flex-wrap:wrap;gap:18px;font-size:15px;font-weight:600}
+
+/* ---------- embed ---------- */
+.embed-bar{display:flex;flex-wrap:wrap;gap:12px 20px;align-items:baseline;justify-content:space-between;margin:0 0 14px}
+.embed-bar p{margin:0;font-size:15px;color:var(--muted)}
+.embed-frame{
+  width:100%;height:calc(100vh - 250px);min-height:620px;
+  border:1px solid var(--line);border-radius:4px;background:#fff;
+}
+.embed-fallback{font-size:15px;color:var(--muted);margin-top:14px}
+
+/* ---------- footer ---------- */
+.site-footer{background:var(--tu-black);border-top:4px solid var(--tu-gold);padding:32px 0;color:var(--tu-mist);font-size:14px}
+.site-footer strong{color:#fff}
+.site-footer p{margin:0 0 10px;max-width:80ch}
+.site-footer a{color:var(--tu-gold)}
+.site-footer .fine{color:#9b9b93;font-size:13px;margin-bottom:0}
+
+@media (max-width:640px){
+  .hero{padding:36px 0 28px}
+  .hero h1{font-size:27px}
+  .hero p{font-size:16px}
+  .card h3{min-height:0}
+  .embed-frame{height:calc(100vh - 210px);min-height:520px}
+  .tu-bar-inner{padding:8px 20px}
+  .tu-unit{display:none}
+}
+
+/* ---------- lead / byline ---------- */
+.lead-card{
+  display:flex;gap:26px;align-items:flex-start;flex-wrap:wrap;
+  background:var(--panel);border:1px solid var(--line);border-left:5px solid var(--tu-gold);
+  border-radius:4px;padding:24px 26px;
+}
+.lead-photo{
+  width:112px;height:112px;border-radius:50%;object-fit:cover;
+  border:3px solid #fff;box-shadow:0 0 0 1px var(--line);flex:none;
+}
+.lead-body{flex:1;min-width:260px}
+.lead-name{font-size:18px;font-weight:800;color:var(--ink);margin:0 0 3px}
+.lead-role{font-size:14px;color:var(--muted);margin:0 0 12px;max-width:60ch}
+.lead-text{font-size:15px;margin:0 0 14px;max-width:62ch}
+.lead-links{display:flex;flex-wrap:wrap;gap:18px;font-size:15px;font-weight:600;margin:0}
+
+@media (max-width:640px){
+  .lead-card{gap:18px;padding:20px}
+  .lead-photo{width:88px;height:88px}
+}
+
+/* ---------- card thumbnails ---------- */
+.card{padding:0;overflow:hidden}
+.card .eyebrow{margin:20px 24px 10px}
+.card h3{margin:0 24px 8px}
+.card .card-links{margin:0 24px 24px}
+.card-thumb{
+  display:block;width:100%;aspect-ratio:16/9;
+  background-color:#efece4;
+  background-size:cover;background-position:top center;background-repeat:no-repeat;
+  border-bottom:1px solid var(--line);
+}
+@supports not (aspect-ratio: 16/9){ .card-thumb{height:190px} }

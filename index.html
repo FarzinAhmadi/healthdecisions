@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Health Decisions Lab — Towson University</title>
+<meta name="description" content="Methods and open data resources for decisions in health systems: hospital payment, care operations, and disease surveillance. Farzin Ahmadi, Towson University.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="tu-bar">
+  <div class="tu-bar-inner">
+    <a class="tu-wordmark" href="https://www.towson.edu/" target="_blank" rel="noopener">
+      <!-- Optional: download the official TU mark from towson.edu/brand, save it as tu-logo.png
+           in this folder, and uncomment the next line. Text fallback is used otherwise. -->
+      <!-- <img src="tu-logo.png" alt=""> -->
+      Towson University
+    </a>
+    <span class="tu-unit">College of Health Professions &middot; Department of Health Sciences</span>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="./">
+      <span class="brand-name">Health Decisions Lab</span>
+      <span class="brand-sub">Towson University</span>
+    </a>
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="./" aria-current="page">Home</a></li>
+        <li><a href="gbr-tracker.html">GBR Tracker</a></li>
+        <li><a href="measles.html">Measles Tracker</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="hero">
+    <div class="wrap">
+      <div class="rule"></div>
+      <h1>Decisions in health systems, and the data behind them</h1>
+      <p>We build methods and open data resources for the decisions that shape health care —
+         how hospitals are paid, how care is scheduled and allocated, and how outbreaks are
+         tracked. Where the underlying data is public but hard to use, we publish it in a form
+         other people can actually work with.</p>
+    </div>
+  </div>
+
+  <section>
+    <div class="wrap">
+      <h2><span class="tick"></span>Live resources</h2>
+      <p class="section-note">Both are built from publicly reported data and are free to use and cite.</p>
+
+      <div class="cards">
+
+        <article class="card">
+          <div class="card-thumb" style="background-image:url('img/gbr-card.jpg')"
+               role="img" aria-label="Screenshot of the Maryland hospital global budget revenue tracker"></div>
+          <p class="eyebrow">Maryland</p>
+          <h3><a href="gbr-tracker.html">Hospital Global Budget Revenue Tracker</a></h3>
+          <p>Regulated revenue, admissions, payer mix and financial margins for every hospital
+             paid under Maryland's all-payer global budget system, compiled from Health Services
+             Cost Review Commission filings. Includes a primer on how the payment model works
+             and the full dataset as a download.</p>
+          <div class="card-links">
+            <a href="gbr-tracker.html">Open the tracker</a>
+            <a href="https://farzinahmadi.github.io/maryland-gbr-tracker/" target="_blank" rel="noopener">Full screen</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-thumb" style="background-image:url('img/measles-card.jpg')"
+               role="img" aria-label="Map of cumulative US measles cases in 2025, from Ahmadi et al., JAMA 2025"></div>
+          <p class="eyebrow">United States</p>
+          <h3><a href="measles.html">U.S. Measles Tracker</a></h3>
+          <p>County-level measles surveillance for the United States, run by
+             Johns Hopkins and updated weekly. Case counts reported by state and county health
+             departments are assembled into a single timely national picture at the geographic
+             resolution outbreaks actually happen. I contribute to the county-level data system
+             behind it.</p>
+          <div class="card-links">
+            <a href="measles.html">About this project</a>
+            <a href="https://publichealth.jhu.edu/ivac/resources/us-measles-tracker" target="_blank" rel="noopener">IVAC dashboard</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2><span class="tick"></span>What we work on</h2>
+      <p>The methodological core is <strong>inverse optimization</strong> — recovering what a
+         decision maker was actually trying to achieve from the decisions they were observed to
+         make, and establishing when a model learned that way can be trusted. Applications run
+         from surgical scheduling and treatment planning to hospital payment policy and
+         surveillance-driven resource allocation.</p>
+      <p>Alongside the methods work, the lab treats public data infrastructure as a research
+         output in its own right. Health systems publish a great deal that is technically open
+         and practically unusable; turning that into documented, citable datasets is part of
+         what we do.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2><span class="tick"></span>Who runs this</h2>
+      <div class="lead-card">
+        <img class="lead-photo" src="img/farzin.jpg" alt="Farzin Ahmadi">
+        <div class="lead-body">
+          <p class="lead-name">Farzin Ahmadi, PhD</p>
+          <p class="lead-role">Assistant Professor of Healthcare Management, Towson University &middot;
+             Affiliate Faculty, Health Policy and Management, Johns Hopkins Bloomberg School of Public Health</p>
+          <p class="lead-text">I work on operations research and inverse optimization for health
+             systems, and on public health data infrastructure. Previously at Johns Hopkins, where
+             I worked on the COVID-19 and measles surveillance systems.</p>
+          <p class="lead-links">
+            <a href="https://farzinahmadi.github.io/">Full CV and publications</a>
+            <a href="mailto:fahmadi@towson.edu">fahmadi@towson.edu</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p><strong>Health Decisions Lab</strong> &middot; Farzin Ahmadi, PhD, Assistant Professor of
+       Healthcare Management &middot; Department of Health Sciences, College of Health Professions,
+       Towson University &middot; <a href="mailto:fahmadi@towson.edu">fahmadi@towson.edu</a></p>
+    <p class="fine">Resources on this site are compiled from publicly reported data. They are not affiliated with or endorsed by any state agency. Views expressed are those of the author and not of Towson University.</p>
+  </div>
+</footer>
+
+
+</body>
+</html>

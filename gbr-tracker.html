@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Maryland Hospital Global Budget Revenue Tracker — Health Decisions Lab</title>
+<meta name="description" content="Regulated revenue, admissions, payer mix and margins for hospitals paid under Maryland's all-payer global budget system, compiled from HSCRC filings.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="tu-bar">
+  <div class="tu-bar-inner">
+    <a class="tu-wordmark" href="https://www.towson.edu/" target="_blank" rel="noopener">
+      <!-- Optional: download the official TU mark from towson.edu/brand, save it as tu-logo.png
+           in this folder, and uncomment the next line. Text fallback is used otherwise. -->
+      <!-- <img src="tu-logo.png" alt=""> -->
+      Towson University
+    </a>
+    <span class="tu-unit">College of Health Professions &middot; Department of Health Sciences</span>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="./">
+      <span class="brand-name">Health Decisions Lab</span>
+      <span class="brand-sub">Towson University</span>
+    </a>
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="./">Home</a></li>
+        <li><a href="gbr-tracker.html" aria-current="page">GBR Tracker</a></li>
+        <li><a href="measles.html">Measles Tracker</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="hero">
+    <div class="wrap">
+      <div class="rule"></div>
+      <h1>Maryland Hospital Global Budget Revenue Tracker</h1>
+      <p>Maryland sets a fixed annual revenue budget for each hospital rather than paying per
+         service. This tracker compiles what the state publishes about that system — regulated
+         revenue, admissions, payer mix and margins — into one place you can search, filter
+         and download.</p>
+    </div>
+  </div>
+
+  <section>
+    <div class="wrap">
+      <div class="embed-bar">
+        <p>Interactive tracker, embedded below. Includes a primer on the payment model and the full dataset.</p>
+        <p><a href="https://farzinahmadi.github.io/maryland-gbr-tracker/" target="_blank" rel="noopener"><strong>Open full screen&nbsp;↗</strong></a></p>
+      </div>
+
+      <iframe
+        class="embed-frame"
+        src="https://farzinahmadi.github.io/maryland-gbr-tracker/"
+        title="Maryland Hospital Global Budget Revenue Tracker"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+
+      <p class="embed-fallback">If the tracker does not load above, open it directly at
+        <a href="https://farzinahmadi.github.io/maryland-gbr-tracker/" target="_blank" rel="noopener">farzinahmadi.github.io/maryland-gbr-tracker</a>.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2><span class="tick"></span>Why this exists</h2>
+      <p>Maryland has operated an all-payer hospital rate-setting system for decades, and moved
+         to global budgets in 2014. Everything the tracker shows is already published by the
+         Health Services Cost Review Commission — but it is spread across years of separate
+         filings in formats that make comparison across hospitals or over time genuinely hard.
+         The work here is parsing, reconciling and documenting that material so it can be used
+         and cited without repeating the effort.</p>
+      <p>The question is timely beyond Maryland. Several states are moving toward hospital
+         global budgeting on a model borrowed from Maryland's design, which makes twenty years
+         of Maryland reporting the closest thing to evidence about how such a system behaves.</p>
+
+      <h2><span class="tick"></span>Using and citing the data</h2>
+      <p>The dataset, data dictionary and source manifest are available from the tracker's
+         <a href="https://farzinahmadi.github.io/maryland-gbr-tracker/" target="_blank" rel="noopener">Data tab</a>,
+         along with the code used to build it. If you use it in published work, please cite it;
+         if you find an error, please tell us.</p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p><strong>Health Decisions Lab</strong> &middot; Farzin Ahmadi, PhD, Assistant Professor of
+       Healthcare Management &middot; Department of Health Sciences, College of Health Professions,
+       Towson University &middot; <a href="mailto:fahmadi@towson.edu">fahmadi@towson.edu</a></p>
+    <p class="fine">Compiled from published Health Services Cost Review Commission and CMS files. Not affiliated with or endorsed by HSCRC. Views expressed are those of the author and not of Towson University.</p>
+  </div>
+</footer>
+
+
+</body>
+</html>
