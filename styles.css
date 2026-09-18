@@ -176,3 +176,21 @@ p{max-width:68ch}
   .tu-right{gap:0}
   .tu-link{font-size:11px}
 }
+
+/* ---------- solo cards, credit lines, update cadence ---------- */
+.cards--solo{grid-template-columns:minmax(0,620px)}
+.card-credit{
+  font-size:13.5px;line-height:1.55;color:var(--muted);
+  border-left:3px solid var(--tu-mist);padding-left:12px;
+  margin:0 24px 14px !important;flex:none !important;
+}
+.card-meta{
+  font-size:12px;letter-spacing:.04em;font-weight:700;color:var(--tu-oldgold);
+  text-transform:uppercase;margin:0 24px 16px !important;flex:none !important;
+}
+.section-alt{background:var(--panel);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.hero-note{font-size:15px;color:var(--muted);max-width:66ch;margin-top:14px}
+.citation{
+  font-size:13.5px;line-height:1.6;color:var(--muted);
+  border-left:3px solid var(--tu-gold);padding-left:12px;max-width:74ch;
+}
